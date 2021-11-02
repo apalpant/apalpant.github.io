@@ -116,6 +116,7 @@
             $.each( data, function( key, val ) {
               // items.push( "<li id='" + key + "'>" + val + "</li>" );
               console.log(key + " > " + val);
+                    console.log(val + " > " + val['site']);
               // <li data-target="#carouselCV" data-slide-to="0" class="active"></li>
               items.push(" <li data-target='#carouselCV' data-slide-to="+index+"</li>");
               slides.push("<div class='carousel-item'><img class='d-block w-100' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red_flag.svg/1280px-Red_flag.svg.png' alt="+index+"><div class='carousel-caption d-none d-md-block'><h5>Title "+index+"</h5><p>paragraph</p></div></div>");
@@ -134,8 +135,8 @@
         //      "class": "my-new-new-list",
         //      html: slides.join( "" )
          //   }).appendTo("#cv-carousel-inner");    
-
-          
+        index++;
+            
         }).fail(function(){
             console.log("An error has occurred.");
         });
