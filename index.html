@@ -77,20 +77,16 @@
       //some code
 //       const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
       
-      const fs = require('fs')
-  
-      fs.readFile("fichier.json", (err, data) => {
-          if (err) throw err;
-
-          console.log(data.toString());
-                  
-          const obj = JSON.parse(data.toString());
-          obj.birth = new Date(obj.birth);
-
-          document.getElementById("output").innerHTML = obj.name + ", " + obj.birth; 
-      })
-      
-    
+      $.get('file.txt', function(data) {
+          const text = data.toString();
+         console.log(text);
+         //process text file line by line
+        
+         const obj = JSON.parse(text);
+         const birth = new Date(obj.birth);
+         $('#output').html(obj.name + ", " + birth);
+      });
+     
       
     }
 </script>
