@@ -78,7 +78,7 @@
 //       const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
        var fr=new FileReader();
       fr.readAsText("fichier.json");
-      const text = fr.result;
+      const text = fr.result.text();
       const obj = JSON.parse(text);
       obj.birth = new Date(obj.birth);
 
