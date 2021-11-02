@@ -79,10 +79,21 @@
        var fr=new FileReader();
       fr.readAsText("fichier.json");
       const text = fr.result.text();
-      const obj = JSON.parse(text);
-      obj.birth = new Date(obj.birth);
+      
+      const fs = require('fs')
+  
+      fs.readFile("fichier.json", (err, data) => {
+          if (err) throw err;
 
-      document.getElementById("output").innerHTML = obj.name + ", " + obj.birth; 
+          console.log(data.toString());
+                  
+          const obj = JSON.parse(data.toString());
+          obj.birth = new Date(obj.birth);
+
+          document.getElementById("output").innerHTML = obj.name + ", " + obj.birth; 
+      })
+      
+    
       
     }
 </script>
