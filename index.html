@@ -29,7 +29,8 @@
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-    <textarea rows=20 id="output"></textarea>
+    <textarea rows=3 id="output"></textarea>
+    <div id="test"> </div>
    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,6 +76,16 @@
             console.log(data.city);
           
           $('#output').html(data.name + ", " + data.city);
+          
+            var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "#test" );
           
         }).fail(function(){
             console.log("An error has occurred.");
