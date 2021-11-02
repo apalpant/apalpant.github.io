@@ -68,6 +68,8 @@
     
     <div id="carouselCV" class="carousel slide" data-ride="carousel">
       
+      <ol id="cv-carousel-indicators" class="carousel-indicators"></ol>
+      
       <div id="cv-carousel-inner" class="carousel-inner"></div>
       
       <a class="carousel-control-prev" href="#carouselCV" role="button" data-slide="prev">
@@ -115,18 +117,22 @@
               console.log(key + " > " + val);
               // <li data-target="#carouselCV" data-slide-to="0" class="active"></li>
               items.push(" <li data-target='#carouselCV' data-slide-to="+index+"</li>");
-              slides.push("<img class='d-block w-100' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red_flag.svg/1280px-Red_flag.svg.png' alt="+index+"><div class='carousel-caption d-none d-md-block'><h5>Title "+index+"</h5><p>paragraph</p></div>");
+              slides.push("<div class='carousel-item active'><img class='d-block w-100' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Red_flag.svg/1280px-Red_flag.svg.png' alt="+index+"><div class='carousel-caption d-none d-md-block'><h5>Title "+index+"</h5><p>paragraph</p></div></div>");
             });
 
-            $( "<ol class='carousel-indicators'></ol>", {
-              "class": "my-new-list",
-              html: items.join( "" )
-            }).appendTo("#carouselCV");
+           // $( "<ol class='carousel-indicators'></ol>", {
+           //   "class": "my-new-list",
+         //     html: items.join( "" )
+         //   }).appendTo("#carouselCV");
          
-         $( "<div class='carousel-item'></div>", {
-              "class": "my-new-new-list",
-              html: slides.join( "" )
-            }).appendTo("#cv-carousel-inner");    
+         $("#cv-carousel-indicators").append(items.join( "" ));
+         
+         $("#cv-carousel-inner").append(items.join( "" ));
+         
+       //  $( "<div class='carousel-item'></div>", {
+        //      "class": "my-new-new-list",
+        //      html: slides.join( "" )
+         //   }).appendTo("#cv-carousel-inner");    
 
           
         }).fail(function(){
