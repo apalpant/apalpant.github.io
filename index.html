@@ -64,15 +64,18 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
 
 <script >
     $(document).ready(function(){
-        $.getJSON("test.json", function(data){
-            console.log(data.name); // Prints: Harry
-            console.log(data.age); // Prints: 14
+        $.getJSON("fichier.json", function(data){
+            console.log(data.name); 
+            console.log(data.city);
+          
+          $('#output').html(data.name + ", " + data.city);
+          
         }).fail(function(){
             console.log("An error has occurred.");
         });
