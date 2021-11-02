@@ -65,6 +65,32 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    
+    <div id="carouselCV" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselCV" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselCV" data-slide-to="1"></li>
+        <li data-target="#carouselCV" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Image_noire.jpg/1280px-Image_noire.jpg" alt="First slide">
+           <div class="carousel-caption d-none d-md-block">
+            <h5>Title 1</h5>
+            <p>paragraph</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
@@ -78,14 +104,32 @@
           $('#output').html(data.name + ", " + data.city);
           
             var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
-  });
- 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "#test" );
+            $.each( data, function( key, val ) {
+              items.push( "<li id='" + key + "'>" + val + "</li>" );
+            });
+
+            $( "<ul/>", {
+              "class": "my-new-list",
+              html: items.join( "" )
+            }).appendTo( "#test" );
+          
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
+      
+       $.getJSON("cv.json", function(data){   
+            var items = [];
+            var index = 0; 
+            $.each( data, function( key, val ) {
+              // items.push( "<li id='" + key + "'>" + val + "</li>" );
+              // <li data-target="#carouselCV" data-slide-to="0" class="active"></li>
+              items.push(" <li data-target='#carouselCV' data-slide-to="+index+"</li>");
+            });
+
+            $( "<ul/>", {
+              "class": "my-new-list",
+              html: items.join( "" )
+            }).appendTo( "ol" );
           
         }).fail(function(){
             console.log("An error has occurred.");
