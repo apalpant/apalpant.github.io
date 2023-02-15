@@ -1,3 +1,16 @@
-#carouselCV {
-  width: 50%;
+.container {
+  width: 100%;
+}
+
+.carousel-caption {
+  bottom: unset;
+}
+
+.carousel-panel,
+.carousel-overlay {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
