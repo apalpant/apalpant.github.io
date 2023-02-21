@@ -1,0 +1,284 @@
+[
+  {
+    "employeur": "Neo-Soft",
+    "client": "BRGM",
+    "logo": "",
+    "lieu": "Limoges",
+    "titre": "REFONTE APPLICATION",
+    "role": ": Développeur Java/Angular",
+    "periode": "03/2021 – 09/2021",
+    "mission": "",
+    "mot_cles": [
+    ],
+    "taches": [
+    ]
+  },
+  {
+    "employeur": "Neo-Soft",
+    "client": "CARSAT",
+    "logo": "",
+    "lieu": "Limoges",
+    "titre": "NOUVEAU PORTAIL (AAH)",
+    "role": ": Développeur Java",
+    "periode": "10/2021 – 03/2022",
+    "mission": "",
+    "mot_cles": [
+    ],
+    "taches": [
+    ]
+  },
+  {
+    "employeur": "Neo-Soft",
+    "client": "",
+    "logo": "",
+    "lieu": "Limoges",
+    "titre": "FORMATION DEV OPS",
+    "role": ": Développeur Java/Angular",
+    "periode": "03/2021 – 09/2021",
+    "mission": "",
+    "mot_cles": [
+    ],
+    "taches": [
+    ]
+  },
+  {
+    "employeur": "Neo-Soft",
+    "client": "ASP",
+    "logo": "",
+    "lieu": "Limoges",
+    "titre": "PILOTAGE ET SUIVI ACTIVITE",
+    "role": ": Développeur Java/Angular",
+    "periode": "02/2018 – 01/2021",
+    "mission": "Au sein de l’ASP (Agence de Services et de Paiement – un établissement public à Limoges) une application de suivi du pilotage et de l’activité concernant les agents de l’agence a été demandé. Elle vient unifier et remplacer l’existant utilisé sous forme de fichiers Excel notamment. Le projet était composé de 14 personnes, avec plusieurs pôles distincts (management, recueil du besoin, conception, développement et intégration).",
+    "mot_cles": [
+      "Secteurs : Administration",
+      "Langages : Java, Angular, HTML",
+      "Base de Données : PostgreSQL",
+      "Outils : IntelliJ, Maven, Git, SVN, Jenkins, Docker",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Conception et implémentation de nouvelles fonctionnalités en Java et Angular",
+      "Participation aux rendez-vous Agile",
+      "Echanges avec le pôle conception",
+      "Correction des différents niveaux de défauts"
+    ]
+  },
+  {
+    "employeur": "Neo-Soft",
+    "client": "ASP",
+    "logo": "",
+    "lieu": "Limoges",
+    "titre": "DOSSIER ADMINISTRATIFS",
+    "role": "Développeur Java/Struts",
+    "periode": "05/2016 – 02/2018",
+    "mission": "Au sein de l’ASP (Agence de Services et de Paiement – un établissement public à Limoges) j’ai rejoint le projet SERAPIS ; une application existante permettant notamment la création et la gestion des « trames » de dossiers administratifs. J’ai développé et maintenu des fonctionnalités en Java/Struts suivant les besoins. Le projet était composé de 3 personnes : 1 chef de projet, 1 concepteur et 1 développeur. La partie concernant les tests était effectuée par la maitrise d’ouvrage",
+    "mot_cles": [
+      "Secteurs : Administration",
+      "Langages : Java, Struts 1, HTML",
+      "Base de Données : PostGresSQL",
+      "Outils : Maven, Eclipse, SVN",
+      "Méthodes : Cycle en V"
+    ],
+    "taches": [
+      "Conception et implémentation de nouvelles fonctionnalités",
+      "En charge des livraisons sur les différents environnements",
+      "Correction de défauts"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "Sogeti High Tech",
+    "logo": "",
+    "lieu": "Grenoble",
+    "titre": "REALITE AUGMENTEE ANDROID",
+    "role": "Encadrement d’un stage de fin d’études.",
+    "periode": "02/2015 – 08/2015",
+    "mission": "Au sein de SHT Grenoble j’ai encadré le stage de fin d’études d’un étudiant qui devait réaliser un prototype de réalité augmentée sur smartphone Android. Celui-ci devait permettre d’afficher un modèle 3D à partir d’un marqueur lu par la caméra. Ce prototype devait être intégré par la suite à la partie R&D de la société.",
+    "mot_cles": [
+      "Compétences Fonctionnelles : Encadrement, revue de code",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Suivi, encadrement",
+      "Revue de code"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "SFR",
+    "logo": "",
+    "lieu": "Grenoble",
+    "titre": "SFR BUSINESS",
+    "role": "Développeur Java J2ee",
+    "periode": "11/2015 – 01/2016",
+    "mission": "Sur le site SFR Businness de Montbonnot-Saint-Martin (38) j’ai réalisé l’implémentation de nouvelles fonctionnalités liées notamment à l’authentification OAuth2 sur un serveur J2EE utilisé par la partie clients professionnels de SFR. A côté de cela un outil de tests associé à ces nouvelles fonctionnalités a été développé.",
+    "mot_cles": [
+      "Secteurs : Télécoms",
+      "Langages : Java 8",
+      "Outils : Eclipse, Git",
+      "Compétences Fonctionnelles : Création d’un outil de tests",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Conception et implémentation de la solution",
+      "Création d’un outil de tests",
+      "Déploiement de la solution"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "Alstom Hydro",
+    "logo": "",
+    "lieu": "Grenoble",
+    "titre": "Alstom Hydro",
+    "role": ": Développeur Java",
+    "periode": "12/2014 – 10/2015",
+    "mission": "Sur le site Alstom Hydro de Grenoble j’ai réalisé une application Java capable de dépiler, traiter et stocker un grand volume de données issues d’une chaine d’acquisition. Cette application a été réalisée conjointementavec le responsable technique sous la responsabilité d’un chef de projet côté Alstom. Par ailleurs elle s’interfaçait avec une application réalisée à Toulouse dans les locaux de Sogeti High Tech qui, elle, restituait les données dans une IHM développée en Java FX",
+    "mot_cles": [
+      "Secteurs : Energies",
+      "Langages : Java 8",
+      "Base de Données : MongoDB",
+      "Outils : Maven, SVN, RabbitMQ",
+      "Compétences Fonctionnelles : Architecture de la solution",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Architecture",
+      "Conception et implémentation de la solution",
+      "Déploiements des solutions",
+      "Recueil du besoin",
+      "Réalisation de tests de performances et de charges",
+      "Rédaction des documents liés à l’application"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "SFR",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_SFRBusiness.jpg",
+    "lieu": "Grenoble",
+    "titre": "Titre mission SFR",
+    "role": "Dev Android",
+    "periode": "05/2014 - 11/2014",
+    "mission": "Sur le site SFR Grand Public de Montbonnot-Saint-Martin (38) j’ai réalisé principalement de l’implémentation de nouvelles fonctionnalités sur les applications Android SFR. Celles-ci étaient embarquées sur les téléphones distribués par la marque ou téléchargeables sur le Google Play",
+    "mot_cles": [
+      "Secteurs : Télécoms",
+      "Langages : Android",
+      "Base de Données : SQLite",
+      "Outils : Android Studio sous Mac OS, SVN",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Conception et implémentation de fonctionnalités",
+      "Correction de défauts",
+      "Déploiements des corrections"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "SFR",
+    "logo": "",
+    "lieu": "Grenoble",
+    "titre": "APPLICATION ANDROID GRAND PUBLIC",
+    "role": " Développeur Android",
+    "periode": "",
+    "mission": "En charge de ...",
+    "mot_cles": [
+      "Android",
+      "Java"
+    ],
+    "taches": [
+      "Conception et implémentation de fonctionnalités",
+      "Correction de défauts"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "GRT GAZ",
+    "logo": "",
+    "lieu": "Toulouse",
+    "titre": "AIDE A LA DECISION",
+    "role": "Développeur Android",
+    "periode": "08/2013 – 04/2014",
+    "mission": "Pour le compte de GRT Gaz nous avons désigné et développé une application Android permettant de capturer une valeur sur une jauge, de représenter en 2D le plan d’un site de GRT GAZ. Sur ce plan des actions sur les éléments du site étaient possible afin d’anticiper les manœuvres en réel et avoir un visuel sur le parcours du gaz dans les différentes canalisations. Ces actions étaient ensuite historisées et exportées",
+    "taches": [
+      "Architecture de la solution",
+      "Conception et implémentation de fonctionnalités",
+      "Déploiements de la solution"
+    ],
+    "mot_cles": [
+      "Secteurs : Energies",
+      "Langages : Android",
+      "Base de Données : SQLite",
+      "Outils : Android Studio, SVN",
+      "Compétences Fonctionnelles : Architecture d’une solution Android",
+      "Méthodes : Cycle en V"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "AIRBUS SBAW",
+    "logo": "",
+    "lieu": "Toulouse",
+    "titre": "AMENAGEMENT CABINE AVION",
+    "role": "Développeur Java",
+    "periode": "03/2013 – 08/2013",
+    "mission": "Pour le compte d’Airbus une application de gestion d’agencement d’un avion avait été créée sur le site SHT de Toulouse. J’ai rejoint ce projet en cours et participé au développement, à la réécriture de code et à l’enrichissement et création de nouvelles fonctionnalités. Par ailleurs j’ai participé à la formation des développeurs Java Junior sur le projet.",
+    "mot_cles": [
+      "Secteurs : Aéronautique",
+      "Langages : Java 1.6",
+      "Base de Données : Oracle",
+      "Outils : Maven, Eclipse, SVN",
+      "Compétences Fonctionnelles : Encadrement et formation des développeurs Junior",
+      "Méthodes : Agile"
+    ],
+    "taches": [
+      "Conception et implémentation de fonctionnalités",
+      "Encadrement et formation des développeurs Java Junior"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "Dassault Systèmes",
+    "logo": "",
+    "lieu": "Toulouse",
+    "titre": "APPLICATION LIEN AVEC SAP",
+    "role": "Rôle: Développeur VB Script.",
+    "periode": "06/2012 – 03/2013",
+    "mission": "Sur le site de Toulouse j’ai rejoint un projet consistant à effectuer une passerelle entre un logiciel de planification Dassault (Delmia) et l’environnement SAP d’Airbus. J’ai réalisé pour ce projet le développement de fonctionnalités en VB Script pour contrôler et mettre à jour la cohérence des données entre Delmia et SAP.",
+    "mot_cles": [
+      "Secteurs : Aéronautique",
+      "Langages : VB Script, HTML",
+      "Base de Données : SAP",
+      "Outils : Notepad",
+      "Compétences Fonctionnelles : Création d’un cahier de tests et d’un logiciel de tests",
+      "Méthodes : Cycle en V"
+    ],
+    "taches": [
+      "Conception et implémentation de fonctionnalités en VB Script",
+      "Réalisation de tests",
+      "Déploiements de la solution"
+    ]
+  },
+  {
+    "employeur": "Sogeti High Tech",
+    "client": "AIRBUS SBAW",
+    "logo": "",
+    "lieu": "Toulouse",
+    "titre": "E-LOGBOOK",
+    "role": "Développeur Java Junior",
+    "periode": "04/2010 – 02/2012",
+    "mission": "Pour le compte d’Airbus sur le site de SHT Toulouse, nous avons développé une application Java de gestion électronique de défauts. L’objectif était de remplacer les cahiers de maintenance papier (logbook) par une version électronique qui avait l’avantage d’être plus lisible et dans certains cas de pouvoir déclarer des défauts alors que l’avion était en vol. Celle-ci est donc embarquée sur avion. Projet composé d’une vingtaine de personnes avec plusieurs pôles distincts (management, conception, développement et intégration).",
+    "mot_cles": [
+      "Secteurs : Aéronautique",
+      "Langages : Java 1.6",
+      "Base de Données : Oracle, PostgreSQL",
+      "Outils : Maven, Eclipse, SVN, Jenkins",
+      "Méthodes : Cycle en V"
+    ],
+    "taches": [
+      "Conception et implémentation de fonctionnalités",
+      "Correction de défauts"
+    ]
+  }
+]

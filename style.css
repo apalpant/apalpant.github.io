@@ -1,9 +1,32 @@
 .container {
-  width: 100%;
+    width: 100%;
+}
+
+.card {
+    padding: 0 .5rem;
+    font-size: .8rem;
+    border: 0;
+}
+
+.card-title {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: italic;
+    border-bottom: 1px solid grey;
+}
+
+.d-none {
+    display: block !important;
+}
+
+li.list-group-item.italic {
+    padding: .25rem 2rem;
+    font-style: italic;
 }
 
 .carousel-caption {
-  bottom: unset;
+    bottom: unset;
 }
 
 .carousel-panel,
@@ -13,4 +36,32 @@
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+#cursus {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1em;
+}
+
+#cursus td, #cursus th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#cursus tr:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+
+#cursus tr:hover {
+    background-color: #ddd;
+}
+
+#cursus th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #e7f1ff;
+    color: #0c63e4;
 }

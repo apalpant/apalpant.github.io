@@ -1,0 +1,26 @@
+[
+  {
+    "titre": "Langages",
+    "valeur": "Java 17, Angular 8, HTML 5/ CSS, SQL, NoSQL"
+  },
+  {
+    "titre": "Systèmes",
+    "valeur": "Windows, LINUX"
+  },
+  {
+    "titre": "Base de Données",
+    "valeur": "PostgreSQL, MongoDB"
+  },
+  {
+    "titre": "Outils",
+    "valeur": "Visual Studio Code, IntelliJ, Git, SVN, Sonar, Jenkins, Docker"
+  },
+  {
+    "titre": "Méthodes",
+    "valeur": " Agile, Cycle en V"
+  },
+  {
+    "titre": "Secteurs d’activités",
+    "valeur": "Energie, Aéronautique/Industrie, Télécoms, Recherche, R&D, Administration"
+  }
+]
