@@ -1,7 +1,11 @@
 [
   {
     "titre": "Langages",
-    "valeur": "Java 17, Angular 8, HTML 5/ CSS, SQL, NoSQL"
+    "valeur": "Java 17, HTML 5/ CSS, SQL, NoSQL, Python"
+  },
+  {
+    "titre": "Frameworks",
+    "valeur": "Spring/Spring boot, Bootstrap, Angular"
   },
   {
     "titre": "Systèmes",
@@ -13,7 +17,7 @@
   },
   {
     "titre": "Outils",
-    "valeur": "Visual Studio Code, IntelliJ, Git, SVN, Sonar, Jenkins, Docker"
+    "valeur": "Visual Studio Code, IntelliJ, Git, SVN, Sonar, Jenkins, Docker, Kubernetes, AWS, Vagrant"
   },
   {
     "titre": "Méthodes",

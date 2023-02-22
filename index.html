@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="./style.css">
 
     <title>CV - PALPANT Alexandre</title>
@@ -41,23 +41,25 @@
                     </ul>
                 </div>
                 <div class="card-text col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
-                    <table id="cursus">
-                        <tr>
-                            <th>Cursus et Formations</th>
-                        </tr>
-                        <tr>
-                            <td>2021 : Formation DevOps 6 mois.</td>
-                        </tr>
-                        <tr>
-                            <td>2009 : Diplôme d’ingénierie informatique en alternance.</td>
-                        </tr>
-                        <tr>
-                            <td>2008 : Certification Java.</td>
-                        </tr>
-                        <tr>
-                            <td>2006 : DEUG Mathématiques et Informatique Appliquées aux Sciences.</td>
-                        </tr>
-                    </table>
+                    <ul class="timeline">
+                        <li>
+                            <span class="dates">2021 - Formation</span>
+                            <p>Formation DevOps 6 mois.</p>
+                        </li>
+                        <li>
+                            <span class="dates">2009 - </span><a target="_blank"
+                                                                 href="https://www.imerir.com/">Diplôme</a>
+                            <p>Diplôme d’ingénierie informatique en alternance.</p>
+                        </li>
+                        <li>
+                            <span class="dates">2008 - Certification</span>
+                            <p>Certification Java.</p>
+                        </li>
+                        <li>
+                            <span class="dates">2006 - Diplôme</span>
+                            <p>DEUG Mathématiques et Informatique Appliquées aux Sciences.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -72,7 +74,7 @@
     <div class="card col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6" style="border: 0">
         <div class="card-body">
             <h5 class="card-title ">Expériences</h5>
-            <div id="carouselXP" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselXP" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
 
                 <div id="xp-carousel-indicators" class="carousel-indicators"></div>
 
@@ -92,7 +94,8 @@
     </div>
 </div>
 
-<!--
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -101,23 +104,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
--->
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
-
 
 <script>
     $(document).ready(function () {
@@ -159,41 +145,87 @@
             var motsCles = [];
             var taches = [];
             $.each(data, function (key, val) {
-                val['mot_cles'].forEach(motCle => motsCles.push(`<li class="list-group-item"><span>${motCle}</span></li>`));
-                val['taches'].forEach(tache => taches.push(`<li class="list-group-item"><span>${tache}</span></li>`));
+                val['mot_cles'].forEach(motCle => motsCles.push(`<li class="list-group-item xp">${motCle}</li>`));
+                val['taches'].forEach(tache => taches.push(`<li class="list-group-item xp">${tache}</li>`));
                 var active = index === 0 ? "class='active' aria-current='true'" : ''
                 items.push(`<button type="button" data-bs-target="#carouselXP" data-bs-slide-to="${index}" ${active} aria-label="Slide ${index}"></button>`);
                 slides.push(`
-                      <div class='carousel-item'>
-                      <svg width="100%" height="100%" viewBox="0 0 100 100"
-                             xmlns="http://www.w3.org/2000/svg">
-                             <rect x="0" y="0" width="100" height="100" fill="grey" />
-                        </svg>
-                        <div class="carousel-overlay">
-                          <div class='carousel-caption d-md-block'>
-                            <div class="row">
-                                 <div class="col-6">
-                                 ${val['client']}
-                                 </div>
-                                 <div class="col-6">
-                                 ${val['periode']}
-                                 </div>
-                                 </div>
-                             <h5>${val['titre']}</h5>
-                             <p>${val['mission']}</p>
-                             <div class="row">
-                                 <div class="col-6">
-                                    <ul class="list-group list-group-flush">${motsCles.join('')}
-                                    </ul>
-                                 </div>
-                                 <div class="col-6">
-<ul class="list-group list-group-flush">${taches.join('')}
-                                    </ul>
-                                 </div>
+                        <div class='carousel-item'>
+                           <!-- <svg class="d-block d-sm-none d-md-none d-lg-block" width="100%" height="125%" viewBox="0 0 100 125"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0" y="0" width="100" height="125" fill="white" stroke-width=".25" stroke="#e3e3e3" />
+                            </svg>
+                            <svg class="d-none d-sm-block d-md-block d-lg-none" width="100%" height="100%" viewBox="0 0 100 100"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0" y="0" width="100" height="100" fill="white" stroke-width=".25" stroke="#e3e3e3" />
+                            </svg> -->
+                            <svg width="100%" height="125%" viewBox="0 0 100 125"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0" y="0" width="100" height="125" fill="white" stroke-width=".25" stroke="#e3e3e3"/>
+                            </svg>
+                            <div class="carousel-overlay">
+                                <div class='carousel-caption d-md-block'>
+                                    <div class="row" style="margin-bottom: 1rem">
+                                        <div class="col-12">
+                                            <h5>${val['titre']}</h5></div>
+                                        <div class="col-5">
+
+                                        </div>
+                                        <div class="col-7">
+                                           <span style="color: grey">${val['client']} - ${val['periode']}</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="accordion accordion-flush" id="accordionInformations-${index}">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-heading-A-${index}">
+                                                    <button class="accordion-button xp" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapse-A-${index}" aria-expanded="false"
+                                                            aria-controls="flush-collapse-A-${index}">
+                                                        Description
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapse-A-${index}" class="accordion-collapse collapse show"
+                                                     aria-labelledby="flush-heading-A-${index}" data-bs-parent="#accordionInformations-${index}">
+                                                    <div class="accordion-body xp"><span class="xp">${val['mission']}</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-heading-B-${index}">
+                                                    <button class="accordion-button collapsed xp" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapse-B-${index}" aria-expanded="false"
+                                                            aria-controls="flush-collapse-B-${index}">
+                                                        Environnement
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapse-B-${index}" class="accordion-collapse collapse"
+                                                     aria-labelledby="flush-heading-B-${index}" data-bs-parent="#accordionInformations-${index}">
+                                                    <div class="accordion-body xp">
+                                                        <ul class="list-group list-group-flush">${motsCles.join("")}</ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-heading-C-${index}">
+                                                    <button class="accordion-button collapsed xp" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapse-C-${index}" aria-expanded="false"
+                                                            aria-controls="flush-collapse-C-${index}">
+                                                        Taches
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapse-C-${index}" class="accordion-collapse collapse"
+                                                     aria-labelledby="flush-heading-C-${index}" data-bs-parent="#accordionInformations-${index}">
+                                                    <div class="accordion-body xp">
+                                                        <ul class="list-group list-group-flush">${taches.join("")}</ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>`);
+                            </div>
+                            `);
                 index++;
                 motsCles = [];
                 taches = [];
