@@ -1,13 +1,28 @@
 <div>
-  <div id="chart" style="min-height: 350px"></div>
+  <!--<div id="chart" style="min-height: 350px"></div> --> 
    <!-- <canvas id="myChart"></canvas> -->
+   <canvas id="bar"></canvas>
+   
 </div>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
 
 <script>
   const ctx = document.getElementById('myChart');
+  
+  const CHART_COLORS = {
+  red: 'rgb(255, 99, 132)',
+   hred: 'rgb(255, 99, 132, .1)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+hblue: 'rgb(54, 162, 235, .5)',  
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(201, 203, 207)'
+};
+
 
  /* new Chart(ctx, {
     type: 'bar',
@@ -28,6 +43,58 @@
     }
   }); */
   
+  const data = {
+  labels: ['Me', 'Her'],
+  datasets: [
+    {
+      label: 'Consomme',
+      data: [900, 400],
+      borderColor: CHART_COLORS.red,
+      backgroundColor: CHART_COLORS.hred,      
+	  borderWidth: 2,
+      borderRadius: 15,
+      borderSkipped: false,
+    },
+    {
+      label: 'Budgetise',
+      data: [800, 600],
+      borderColor: CHART_COLORS.blue,
+      backgroundColor: CHART_COLORS.hblue,
+	  borderWidth: 2,
+      borderRadius: 15,
+      borderSkipped: false,
+    }
+  ]
+};
+  
+  const config = {
+  type: 'bar',
+  data: data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Bar Chart'
+      }
+    },
+	scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+  },
+};
+
+
+
+new Chart(bar, config);
+
+
+/*
   var options = {
           series: [70],
           chart: {
@@ -45,5 +112,5 @@
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
+        chart.render(); */
 </script>
